@@ -1,0 +1,54 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333; /* Initial background color */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Initial font color */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    color: blue; /* Color changes when hovered or focused */
+}
+
+.content {
+    margin-top: 60px;
+}
+
+.Home-image, .service-image, .about-image, .contact-image {
+    width: 800px;
+    max-height: 800px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+.Home-name, .service-name, .about-name, .contact-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 250px;
+}
